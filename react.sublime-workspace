@@ -1,0 +1,886 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getView"
+			],
+			[
+				"pr",
+				"props	React: this.props."
+			],
+			[
+				"Clu",
+				"ClusterToggleView"
+			],
+			[
+				"word",
+				"word_card_activities"
+			],
+			[
+				"answer",
+				"answer_text"
+			],
+			[
+				"pass",
+				"passages_change"
+			],
+			[
+				"non_",
+				"non_unique_text"
+			],
+			[
+				"hi",
+				"highlight"
+			],
+			[
+				"corr",
+				"corrective_feedback"
+			],
+			[
+				"cor",
+				"corrective_feedback"
+			],
+			[
+				"eac",
+				"each"
+			],
+			[
+				"high",
+				"highlight_preview"
+			],
+			[
+				"highlight_s",
+				"highlight_serialized_update"
+			],
+			[
+				"hight",
+				"highlight_preview"
+			],
+			[
+				"pas",
+				"passage_text_update"
+			],
+			[
+				"val",
+				"valid_highlight_serialized_update"
+			],
+			[
+				"va",
+				"valid_highlight_serialized_update"
+			],
+			[
+				"valid",
+				"valid_highlight_preview_update"
+			],
+			[
+				"end",
+				"end_index"
+			],
+			[
+				"start",
+				"start_index"
+			],
+			[
+				"passage_text_",
+				"passage_text_update"
+			],
+			[
+				"question",
+				"question_excerpt"
+			],
+			[
+				"taxonom",
+				"taxonomy_id"
+			],
+			[
+				"tax",
+				"taxonomy_id"
+			],
+			[
+				"ch",
+				"ch_question"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.js",
+			"settings":
+			{
+				"buffer_size": 299,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/ClusterToggleView/index.js",
+			"settings":
+			{
+				"buffer_size": 1044,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/ClusterThumbView.jsx",
+			"settings":
+			{
+				"buffer_size": 655,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/models/question.rb",
+		"/Users/juangarzon/Desktop/React/src/ClusterThumbView/index.js",
+		"/Users/juangarzon/Desktop/React/index.html",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/config/routes.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/spec/requests/units_spec.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/models/level.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/models/word_card_activity.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/models/signal_word.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/views/units/show.rabl",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/presenters/word_card_activity_presenter.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/lib/tasks/ad_hoc/generate_r180u_word_family_audio_script.rake",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/lib/tasks/ad_hoc/generate_r180u_question_prompt_audio_script.rake",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/usecases/r180u/question/passage_changed.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/spec/usecases/r180u/passage_changed_spec.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/models/anchor_passage.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/usecases/r180u/question/import_comprehension.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/lib/tasks/ad_hoc/generate_r180u_answers_prompt_audio_script.rake",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/presenters/question_presenter.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/lib/tasks/ad_hoc/generate_r180u_word_card_question_prompt_audio_script.rake",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/controllers/units_controller.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/controllers/levels_controller.rb",
+		"/Users/juangarzon/Desktop/file.json",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/spec/usecases/question/passage_changed_spec.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/controllers/reading_zone_close_read_activities_controller.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/views/reading_zone_close_read_activities/index.html.haml",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/controllers/questions_controller.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/controllers/zone_activities_controller.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/models/product.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/usecases/passage/update_passage.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/lib/tasks/ad_hoc/validate_passage_highlight_data.rake",
+		"/Users/juangarzon/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/models/passage.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/usecases/passage/passage_processor.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/test/fixtures/skills.yml",
+		"/Users/juangarzon/Desktop/GRT/samee-r180u-media/src/main/media/content/activi/readpass/r180u_content_readpass_b0606_causeeffect.json",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/controllers/taxonomy_controller.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/models/taxonomy.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/config/environments/development.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/assets/javascripts/views/modals/taxonomy.js",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/config/environments/production.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/config/database.yml",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/config/app_config.yml",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/word_family_stageb_complete.csv",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/assets/javascripts/views/question/taxonomy.js",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/config/application.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/assets/javascripts/application.js",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/assets/javascripts/app.js",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/views/units/child_question.rabl",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/views/units/rfm.rabl",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/views/units/question.rabl",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/views/units/kfr.rabl",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/spec/features/taxonomy/taxonomy_spec.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/spec/features/taxonomy/taxonomy_controller_spec.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/spec/models/taxonomy_spec.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/spec/features/products_spec.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/spec/policies/product_spec.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/spec/models/question_spec.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/lib/taxonomy/taxonomies.json",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/usecases/taxonomy/taxonomy_service.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/views/products/_taxonomies.html.haml",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/views/products/edit.html.haml",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/views/products/_versions.html.haml",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/views/products/_form.html.haml",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/views/products/show.html.haml",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/presenters/product_presenter.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/controllers/products_controller.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/lib/taxonomy_host.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/assets/javascripts/taxonomy/taxonomy.js",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/lib/simple_decorator.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/views/questions/show.html.erb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/assets/javascripts/templates/question/taxonomy.hbs",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/models/questions_skill.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/assets/javascripts/taxonomy/node.html",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/db/migrate/20131003184049_rename_external_i_ds.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/assets/javascripts/views/passages.js",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/assets/javascripts/r180u/views/selected_answers.js",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/spec/spec_helper.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/assets/stylesheets/taxonomy/taxonomy.scss",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/assets/stylesheets/application.css",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/assets/javascripts/taxonomy/taxonomy.html",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/spec/usecases/taxonomy/taxonomy_controller_spec.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/controllers/word_card_activities_controller.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/coverage/index.html",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/lib/taxonomy_host_is.rb",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/temp.json",
+		"/Users/juangarzon/Desktop/r180u_wordcards_b1301.json",
+		"/Users/juangarzon/Desktop/assessments.json",
+		"/Users/juangarzon/Desktop/r180u_wordcards_b1301_surpressed.json",
+		"/Users/juangarzon/Desktop/r180u_wordcards_b0101.json",
+		"/Users/juangarzon/Downloads/s_244(2)/imsmanifest.xml",
+		"/Users/juangarzon/Downloads/s_244(2)/s_244.xml",
+		"/Users/juangarzon/Downloads/s_244(2)/q_20747.xml",
+		"/Users/juangarzon/Downloads/s_244(2)/q_20598.xml",
+		"/Users/juangarzon/Downloads/s_244(2)/q_20597.xml",
+		"/Users/juangarzon/Downloads/s_244(2)/q_20599.xml",
+		"/Users/juangarzon/Downloads/q_20597_complete.xml",
+		"/Users/juangarzon/Downloads/s_244/s_244.xml",
+		"/Users/juangarzon/Desktop/s_244/q_20599.xml",
+		"/Users/juangarzon/Downloads/s_244(24)/q_20747.xml",
+		"/Users/juangarzon/Downloads/s_244/q_20599.xml",
+		"/Users/juangarzon/Downloads/s_244(22)/q_20747.xml",
+		"/Users/juangarzon/Desktop/q_20599.xml",
+		"/Users/juangarzon/Desktop/gap_match/q_20599.xml",
+		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/answers_script_stageb_complete.csv",
+		"/Users/juangarzon/Documents/Comprehension 2/r180u_readpass_b0202_inferences.json",
+		"/Users/juangarzon/Downloads/menom-backend.azurewebsites.net.PublishSettings",
+		"/Users/juangarzon/Desktop/some.json",
+		"/Users/juangarzon/Downloads/r180u_wordcards_b1401(2).json",
+		"/Users/juangarzon/Desktop/r180u_content_wordcardsb_14_01.json",
+		"/Users/juangarzon/Desktop/Compare1",
+		"/Users/juangarzon/Desktop/GRT/samee-qti-player/xml/s_415/q_14220.xml",
+		"/Users/juangarzon/Desktop/qti.xml",
+		"/Users/juangarzon/Desktop/GRT/samee-qti-player/xml/s_364(1)/q_14210.xml",
+		"/Users/juangarzon/Desktop/FoodTo Web Demo/package.json",
+		"/Users/juangarzon/Desktop/sample.xml",
+		"/Users/juangarzon/Desktop/[Story Breakdowns]",
+		"/Users/juangarzon/Desktop/FoodTo Tools/ProductTool Simple/bower_components/ng-table/Gruntfile.js",
+		"/Users/juangarzon/Desktop/FoodTo Tools/ProductTool Simple/Gruntfile.js",
+		"/Users/juangarzon/Desktop/GRT/samee-qti-player/.bowerConfig.json",
+		"/Users/juangarzon/Desktop/Questions for Fed",
+		"/Users/juangarzon/Desktop/FoodTo Tools/ProductTool Simple/bower_components/ng-tags-input/ng-tags-input.js",
+		"/Users/juangarzon/Desktop/FoodTo Tools/ProductTool Simple/app/index.html",
+		"/Users/juangarzon/Desktop/GRT/AngualrJSWorkspace/northman/app/js/controllers/controllers.js",
+		"/Users/juangarzon/Downloads/a_364(16)/q_14212.xml",
+		"/Users/juangarzon/Desktop/q_14215.xml",
+		"/Users/juangarzon/Desktop/Anypic-master/Anypic-iOS/Podfile",
+		"/Users/juangarzon/Downloads/Products.json"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"-*.rb",
+			"-*.json,-*.js",
+			"-*.json",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"@include_suppressed = params[:include_suppressed] == \"true\" ? true : false",
+			"word_cards",
+			"word_card",
+			"word_cards",
+			"word_card",
+			"word-card",
+			"surpress",
+			"surpressed",
+			"from_content_id",
+			"v",
+			"from_content_id",
+			"should correctly return array of questions that were adjusted",
+			"highlight_text",
+			"update_item_highlight",
+			"should NOT be able to update with non-unique text",
+			"highlight_serialized_update",
+			"should NOT be able to update with non-unique text",
+			"update_item_highlight",
+			"should NOT be able to update with non-unique text",
+			"xit",
+			"valid_highlight_answer",
+			"effected_question_ids",
+			"effected_question",
+			"corrective_feedback_passage_change",
+			"should remove passage change from questions that have been properly adjusted",
+			"answer_passage_change",
+			"should remove passage change from questions that have been properly adjusted",
+			"@answer_passage_change",
+			"valid_corrective_feedback",
+			"passage_highlight_question",
+			":passage_highlight_question",
+			"passage_highlight_question",
+			"valid_highlight_answer",
+			"should correctly return array of questions that were adjusted",
+			"should NOT be able to update text that don't exit in the passage text",
+			"build(:anchor_passage_feedback, \n                            question_id:      passage_highlight_question.id,\n                            highlight_serialized: highlight_serialized,\n                            highlight_text: highlight_text,   \n                            highlight_preview: highlight_preview,\n                            highlightable_id: passage.id)",
+			"corrective_feedback = build(:anchor_passage_feedback, \n                            question_id:      passage_highlight_question.id,\n                            highlight_serialized: highlight_serialized,\n                            highlight_text: highlight_text,   \n                            highlight_preview: highlight_preview,\n                            highlightable_id: passage.id)",
+			"corrective_feedback",
+			"@corrective_feedback_passage_change",
+			"corrective_feedback",
+			"@corrective_feedback_question",
+			"corrective_feedback_question",
+			"should remove passage change from questions that have been properly adjusted",
+			"should be able to update highlight to new range",
+			"should be able to identify effected questions ids",
+			"@passage",
+			"passage_highlight_question",
+			"valid_corrective_feedback = ",
+			"valid_corrective_feedback",
+			"valid_highlight_answer",
+			"passage_highlight_type",
+			"@passage_highlight_question",
+			"valid_corrective_feedback",
+			"@incomplete",
+			"@final_approval",
+			"passage_highlight_type",
+			"should be able to update highlight to new range",
+			"corrective feedback item should be able to update highlight to new range",
+			"valid_highlight_preview",
+			"highlight_preview: valid_highlight_preview,",
+			"anchor_passage_type",
+			"valid_highlight_preview_update\nvalid_highlight_preview_update\nvalid_highlight_preview_update",
+			"valid_highlight_preview_update",
+			"invalid_hight_text\ninvalid_hight_text\ninvalid_hight_text",
+			"invalid_hight_text",
+			"valid_highlight_serialized",
+			"highlight_serialized",
+			"valid_highlight_text",
+			"binding.pry",
+			"update_item_highlight",
+			"adjust_questions_highlights",
+			"should correctly return array of questions that were adjusted",
+			"asset_path",
+			"def asset_path\ndef asset_path",
+			"def asset_path?",
+			"def asset_path",
+			"asset_path",
+			"word_text",
+			"defeated_2",
+			"\\n",
+			"record_questions_effected_by_change",
+			"should remove passage change from questions that have been properly adjusted",
+			"update_item_highlight",
+			"adjust_questions_highlights",
+			"should correctly return array of questions that were adjusted",
+			"should be able to update highlight answer to new range",
+			"  3) R180u::Question::PassageChanged ",
+			"count",
+			"update_item_highlight\nupdate_item_highlight",
+			"update_item_highlight",
+			"passage_text_update_plain_text",
+			"should be able to update highlight corrective feedback to new range",
+			"valid_highlight_text",
+			"should be able to update highlight corrective feedback to new range",
+			"Only a handful of people are familiar with Rodolfo Guzman Huerta",
+			"should be able to update highlight corrective feedback to new range",
+			"El Santo",
+			"should NOT be able to update non-unique highlight answer texts",
+			"should be able to update highlight answer to new range",
+			"start_index",
+			"should be able to grab the highlight range for corrective feedback",
+			"The saint",
+			"El Santo - \\\"The Saint\\\" - is a legend in lucha libre,",
+			"should correctly return array of questions that were adjusted",
+			"should be able to grab the highlight range for corrective feedback",
+			"hould be able to grab the highlight range for corrective feedback",
+			"the saint",
+			"ImportComprehension",
+			"ZoneActivitiesController",
+			"—",
+			"should be able to grab the highlight range for corrective feedback",
+			"@passage",
+			"passage_text_clean",
+			"cleaned_text = @passage.passage_text_clean",
+			" should be able to update highlight answer to new range",
+			"should be able to update highlight corrective feedback to new range",
+			"PassageChanged should be able to update highlight corrective feedback to new range",
+			"update_item_highlight",
+			"mark_incomplete",
+			"adjust_questions_highlights",
+			"highlight_range_for",
+			"adjust_questions_highlights",
+			"record_questions_effected_by_change",
+			"mark_incomplete",
+			"host",
+			"hint",
+			"Just as ancient priests used masks to inspire the Aztec people, these modern fighters use masks to inspire their fans.",
+			"clean_text"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"@passage.passage_text = passage_text_update\ncleaned_text = @passage.passage_text_clean \\n cleaned_text = @passage.passage_text_clean",
+			"find_taxonomy_node",
+			"TaxonomyHost"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.js",
+					"settings":
+					{
+						"buffer_size": 299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								94,
+								94
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/ClusterToggleView/index.js",
+					"settings":
+					{
+						"buffer_size": 1044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								538,
+								538
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/ClusterThumbView.jsx",
+					"settings":
+					{
+						"buffer_size": 655,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								260,
+								260
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"question",
+				"app/models/question.rb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"units",
+				"spec/requests/units_spec.rb"
+			],
+			[
+				"word_card",
+				"app/models/word_card.rb"
+			],
+			[
+				"leve",
+				"app/models/level.rb"
+			],
+			[
+				"signal",
+				"app/models/signal_word.rb"
+			],
+			[
+				"level",
+				"app/models/level.rb"
+			],
+			[
+				"rour",
+				"config/routes.rb"
+			],
+			[
+				"generate",
+				"lib/tasks/ad_hoc/generate_r180u_answers_prompt_audio_script.rake"
+			],
+			[
+				"generate_",
+				"lib/tasks/ad_hoc/generate_r180u_word_family_audio_script.rake"
+			],
+			[
+				"rake",
+				"lib/tasks/ad_hoc/generate_r180u_question_prompt_audio_script.rake"
+			],
+			[
+				"word_card_a",
+				"app/models/word_card_activity.rb"
+			],
+			[
+				"question.",
+				"app/models/question.rb"
+			],
+			[
+				"passage_chang",
+				"app/usecases/r180u/question/passage_changed.rb"
+			],
+			[
+				"ques",
+				"app/models/question.rb"
+			],
+			[
+				"quest",
+				"app/models/question.rb"
+			],
+			[
+				"question_prese",
+				"app/presenters/question_presenter.rb"
+			],
+			[
+				"generaterake",
+				"lib/tasks/ad_hoc/generate_r180u_word_family_audio_script.rake"
+			],
+			[
+				"wordcardrake",
+				"lib/tasks/ad_hoc/generate_r180u_word_card_question_prompt_audio_script.rake"
+			],
+			[
+				"levels",
+				"app/controllers/levels_controller.rb"
+			],
+			[
+				"passagechanged",
+				"app/usecases/r180u/question/passage_changed.rb"
+			],
+			[
+				"passage_chan",
+				"spec/usecases/r180u/passage_changed_spec.rb"
+			],
+			[
+				"anchor",
+				"app/models/anchor_passage.rb"
+			],
+			[
+				"import_compre",
+				"app/usecases/r180u/question/import_comprehension.rb"
+			],
+			[
+				"reading_",
+				"app/controllers/reading_zone_close_read_activities_controller.rb"
+			],
+			[
+				"question_contro",
+				"app/controllers/questions_controller.rb"
+			],
+			[
+				"zone_acti",
+				"app/controllers/zone_activities_controller.rb"
+			],
+			[
+				"produ",
+				"app/models/product.rb"
+			],
+			[
+				"passa",
+				"app/models/passage.rb"
+			],
+			[
+				"passage",
+				"app/models/passage.rb"
+			],
+			[
+				"passage.rb",
+				"app/models/passage.rb"
+			],
+			[
+				"passage_ch",
+				"spec/usecases/question/passage_changed_spec.rb"
+			],
+			[
+				"passage_cha",
+				"spec/usecases/r180u/passage_changed_spec.rb"
+			],
+			[
+				"passage_",
+				"app/usecases/passage/passage_processor.rb"
+			],
+			[
+				"save_pas",
+				"lib/tasks/ad_hoc/validate_passage_highlight_data.rake"
+			],
+			[
+				"question_pre",
+				"app/presenters/question_presenter.rb"
+			],
+			[
+				"taxonomy",
+				"app/controllers/taxonomy_controller.rb"
+			],
+			[
+				"taxo",
+				"app/models/taxonomy.rb"
+			],
+			[
+				"taxon",
+				"app/models/taxonomy.rb"
+			],
+			[
+				"taxono",
+				"app/assets/javascripts/views/modals/taxonomy.js"
+			],
+			[
+				"tax",
+				"app/assets/javascripts/views/modals/taxonomy.js"
+			],
+			[
+				"data",
+				"config/database.yml"
+			],
+			[
+				"app",
+				"config/app_config.yml"
+			],
+			[
+				"product_spec",
+				"spec/features/products_spec.rb"
+			],
+			[
+				"taxonomy_spec",
+				"spec/features/taxonomy/taxonomy_controller_spec.rb"
+			],
+			[
+				"question_spec",
+				"spec/models/question_spec.rb"
+			],
+			[
+				"product_sp",
+				"spec/policies/product_spec.rb"
+			],
+			[
+				"taxonomy_con",
+				"app/controllers/taxonomy_controller.rb"
+			],
+			[
+				"taxonomy_serv",
+				"app/usecases/taxonomy/taxonomy_service.rb"
+			],
+			[
+				"product",
+				"app/models/product.rb"
+			],
+			[
+				"product_pre",
+				"app/presenters/product_presenter.rb"
+			],
+			[
+				"product_co",
+				"app/controllers/products_controller.rb"
+			],
+			[
+				"taxonomy.",
+				"app/assets/javascripts/views/modals/taxonomy.js"
+			],
+			[
+				"taxonomy_",
+				"app/controllers/taxonomy_controller.rb"
+			],
+			[
+				"taxonomyhos",
+				"lib/taxonomy_host.rb"
+			],
+			[
+				"taxonomy_ser",
+				"app/usecases/taxonomy/taxonomy_service.rb"
+			],
+			[
+				"question_sp",
+				"spec/models/question_spec.rb"
+			],
+			[
+				"question_skil",
+				"app/models/questions_skill.rb"
+			],
+			[
+				"taxonomyser",
+				"app/usecases/taxonomy/taxonomy_service.rb"
+			],
+			[
+				"question_presen",
+				"app/presenters/question_presenter.rb"
+			],
+			[
+				"red",
+				"db/migrate/20131003184049_rename_external_i_ds.rb"
+			],
+			[
+				"taxonomy.hbs",
+				"app/assets/javascripts/templates/question/taxonomy.hbs"
+			],
+			[
+				"taxonomy.js",
+				"app/assets/javascripts/views/question/taxonomy.js"
+			],
+			[
+				"taxonomyhtml",
+				"app/assets/javascripts/taxonomy/node.html"
+			],
+			[
+				"taxonomy.html",
+				"app/assets/javascripts/taxonomy/taxonomy.html"
+			],
+			[
+				"spec",
+				"spec/spec_helper.rb"
+			],
+			[
+				"taxonom",
+				"lib/taxonomy_host_is.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 239.0,
+	"status_bar_visible": true
+}
