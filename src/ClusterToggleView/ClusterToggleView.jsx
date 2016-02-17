@@ -35,15 +35,14 @@ class ClusterToggleView extends React.Component{
 
   render() {
     return (
-      <div>
-        <button onClick={this.onToggleView} >Toggle View</button>
-        <hr/>
+      <div onClick={this.onToggleView}>
         {this.getView()}
       </div>
             );
   }
 }
 
+Counter.propTypes = { mode: React.PropTypes.string };
 ClusterToggleView.defaultProps = {
     mode: THUMBNAIL_MODE
   };
