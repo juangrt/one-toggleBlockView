@@ -60,9 +60,9 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	//import ClusterToggleView from './src/ClusterToggleView';
+	console.log(_ClusterToggleView2.default.THUMBNAIL_MODE);
 	
-	_reactDom2.default.render(_react2.default.createElement(_ClusterToggleView2.default, { data: 'Juan' }), document.getElementById('container'));
+	_reactDom2.default.render(_react2.default.createElement(_ClusterToggleView2.default, { mode: 'thumbnail' }), document.getElementById('container'));
 
 /***/ },
 /* 1 */
@@ -19703,6 +19703,10 @@
 	
 	var _ClusterThumbView2 = _interopRequireDefault(_ClusterThumbView);
 	
+	var _ClusterDetailView = __webpack_require__(163);
+	
+	var _ClusterDetailView2 = _interopRequireDefault(_ClusterDetailView);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -19723,30 +19727,30 @@
 	  function ClusterToggleView(props) {
 	    _classCallCheck(this, ClusterToggleView);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(ClusterToggleView).call(this, props));
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ClusterToggleView).call(this, props));
 	
-	    //Create event binding here
-	    //this.onToggleView = this.tick.bind(this.onToggleView);
+	    _this.state = {
+	      mode: _this.props.mode
+	    };
+	
+	    //Create event bindings here
+	    _this.onToggleView = _this.onToggleView.bind(_this);
+	    return _this;
 	  }
 	
 	  _createClass(ClusterToggleView, [{
 	    key: 'onToggleView',
 	    value: function onToggleView(event) {
-	      console.log(event);
-	      this.props.mode = this.props.mode === THUMBNAIL_MODE ? DETAIL_MODE : THUMBNAIL_MODE;
-	      this.render();
+	      var newMode = this.state.mode === THUMBNAIL_MODE ? DETAIL_MODE : THUMBNAIL_MODE;
+	      this.setState({ mode: newMode });
 	    }
 	  }, {
 	    key: 'getView',
 	    value: function getView() {
-	      if (this.props.mode === THUMBNAIL_MODE) {
-	        return _react2.default.createElement(_ClusterThumbView2.default, { data: this.props.mode });
+	      if (this.state.mode === THUMBNAIL_MODE) {
+	        return _react2.default.createElement(_ClusterThumbView2.default, { data: this.state.mode });
 	      } else {
-	        return _react2.default.createElement(
-	          'h1',
-	          null,
-	          'Hey Buddy'
-	        );
+	        return _react2.default.createElement(_ClusterDetailView2.default, { data: this.state.mode });
 	      }
 	    }
 	  }, {
@@ -19754,12 +19758,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'button',
-	          { onClick: this.onToggleView },
-	          'Toggle View'
-	        ),
+	        { onClick: this.onToggleView },
 	        this.getView()
 	      );
 	    }
@@ -19769,14 +19768,8 @@
 	}(_react2.default.Component);
 	
 	ClusterToggleView.defaultProps = {
-	  mode: DETAIL_MODE
+	  mode: THUMBNAIL_MODE
 	};
-	
-	//Events management
-	
-	//Display Data
-	
-	//Template?
 	
 	exports.default = ClusterToggleView;
 
@@ -19830,7 +19823,8 @@
 	
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ClusterThumbView).call(this, props));
 	
-	    _this.state.hosts_data = [{ ip: "192.168.1.1" }, { ip: "192.168.1.2" }, { ip: "192.168.1.3" }];
+	    var _data = [{ ip: "192.168.1.1" }, { ip: "192.168.1.2" }, { ip: "192.168.1.3" }];
+	    _this.state = { data: _data };
 	    //Create event binding here
 	    return _this;
 	  }
@@ -19841,17 +19835,12 @@
 	      return _react2.default.createElement(
 	        "div",
 	        null,
-	        "Hello ",
-	        this.props.data,
-	        "/*",
-	        this.state.hosts_data.map(function (host) {
-	          return _react2.default.createElement(
-	            "p",
-	            null,
-	            host.ip
-	          );
-	        }),
-	        "*/"
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "(Thumbnail) - Header 3 ",
+	          this.props.data
+	        )
 	      );
 	    }
 	  }]);
@@ -19859,21 +19848,80 @@
 	  return ClusterThumbView;
 	}(_react2.default.Component);
 	
-	//Events management
-	
-	//Display Data
-	
-	//Template?
-	
 	exports.default = ClusterThumbView;
-	
-	/*
-	React.createClass({
-	  render: function() {
-	    return <div>Hello {this.props.data}</div>;
-	  }
+
+/***/ },
+/* 163 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
 	});
-	*/
+
+	var _ClusterDetailView = __webpack_require__(164);
+
+	var _ClusterDetailView2 = _interopRequireDefault(_ClusterDetailView);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _ClusterDetailView2.default;
+
+/***/ },
+/* 164 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var ClusterDetailView = function (_React$Component) {
+	  _inherits(ClusterDetailView, _React$Component);
+	
+	  function ClusterDetailView(props) {
+	    _classCallCheck(this, ClusterDetailView);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(ClusterDetailView).call(this, props));
+	    //Create event binding here
+	  }
+	
+	  _createClass(ClusterDetailView, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          '(Details) - Header 1 ',
+	          this.props.data
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return ClusterDetailView;
+	}(_react2.default.Component);
+	
+	exports.default = ClusterDetailView;
 
 /***/ }
 /******/ ]);

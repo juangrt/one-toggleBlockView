@@ -108,26 +108,36 @@
 	"buffers":
 	[
 		{
-			"file": "index.js",
-			"settings":
-			{
-				"buffer_size": 299,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "src/ClusterToggleView/index.js",
 			"settings":
 			{
-				"buffer_size": 1044,
+				"buffer_size": 89,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/ClusterThumbView.jsx",
+			"file": "src/ClusterDetailView/index.js",
 			"settings":
 			{
-				"buffer_size": 655,
+				"buffer_size": 89,
+				"line_ending": "Unix",
+				"name": "import ClusterDetailView from './ClusterDetailView"
+			}
+		},
+		{
+			"file": "src/ClusterDetailView/ClusterDetailView.jsx",
+			"settings":
+			{
+				"buffer_size": 26,
+				"line_ending": "Unix",
+				"name": "import React from 'react';"
+			}
+		},
+		{
+			"file": "src/ClusterToggleView/ClusterToggleView.jsx",
+			"settings":
+			{
+				"buffer_size": 1043,
 				"line_ending": "Unix"
 			}
 		}
@@ -180,6 +190,13 @@
 	},
 	"file_history":
 	[
+		"/Users/juangarzon/Desktop/GRT/one-toggleBlockView/src/ClusterThumbView/index.js",
+		"/Users/juangarzon/Desktop/GRT/one-toggleBlockView/index.js",
+		"/Users/juangarzon/Desktop/GRT/one-toggleBlockView/package.json",
+		"/Users/juangarzon/Desktop/GRT/one-toggleBlockView/src/ClusterToggleView/index.js",
+		"/Users/juangarzon/Desktop/React/react.sublime-project",
+		"/Users/juangarzon/Desktop/GRT/one-toggleBlockView/src/ClusterThumbView.jsx",
+		"/Users/juangarzon/Desktop/GRT/one-toggleBlockView/react.sublime-project",
 		"/Users/juangarzon/Desktop/React/package.json",
 		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/models/question.rb",
 		"/Users/juangarzon/Desktop/React/src/ClusterThumbView/index.js",
@@ -300,14 +317,7 @@
 		"/Users/juangarzon/Desktop/FoodTo Tools/ProductTool Simple/bower_components/ng-table/Gruntfile.js",
 		"/Users/juangarzon/Desktop/FoodTo Tools/ProductTool Simple/Gruntfile.js",
 		"/Users/juangarzon/Desktop/GRT/samee-qti-player/.bowerConfig.json",
-		"/Users/juangarzon/Desktop/Questions for Fed",
-		"/Users/juangarzon/Desktop/FoodTo Tools/ProductTool Simple/bower_components/ng-tags-input/ng-tags-input.js",
-		"/Users/juangarzon/Desktop/FoodTo Tools/ProductTool Simple/app/index.html",
-		"/Users/juangarzon/Desktop/GRT/AngualrJSWorkspace/northman/app/js/controllers/controllers.js",
-		"/Users/juangarzon/Downloads/a_364(16)/q_14212.xml",
-		"/Users/juangarzon/Desktop/q_14215.xml",
-		"/Users/juangarzon/Desktop/Anypic-master/Anypic-iOS/Podfile",
-		"/Users/juangarzon/Downloads/Products.json"
+		"/Users/juangarzon/Desktop/Questions for Fed"
 	],
 	"find":
 	{
@@ -315,7 +325,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 			"",
@@ -478,49 +488,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.js",
-					"settings":
-					{
-						"buffer_size": 299,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								94,
-								94
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "src/ClusterToggleView/index.js",
 					"settings":
 					{
-						"buffer_size": 1044,
+						"buffer_size": 89,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								263,
-								263
+								0,
+								89
 							]
 						],
 						"settings":
@@ -530,25 +514,79 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 76.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "src/ClusterThumbView.jsx",
+					"buffer": 1,
+					"file": "src/ClusterDetailView/index.js",
 					"settings":
 					{
-						"buffer_size": 655,
+						"buffer_size": 89,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								260,
-								260
+								89,
+								89
+							]
+						],
+						"settings":
+						{
+							"auto_name": "import ClusterDetailView from './ClusterDetailView",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/ClusterDetailView/ClusterDetailView.jsx",
+					"settings":
+					{
+						"buffer_size": 26,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26,
+								26
+							]
+						],
+						"settings":
+						{
+							"auto_name": "import React from 'react';",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/ClusterToggleView/ClusterToggleView.jsx",
+					"settings":
+					{
+						"buffer_size": 1043,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								314,
+								314
 							]
 						],
 						"settings":
