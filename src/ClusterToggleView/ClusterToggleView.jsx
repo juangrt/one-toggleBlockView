@@ -1,6 +1,6 @@
 import React from 'react';
 import ClusterThumbView from '../ClusterThumbView';
-
+import ClusterDetailView from '../ClusterDetailView';
 
 //Default state
 //mode : Thumbnail | Detail
@@ -12,21 +12,24 @@ class ClusterToggleView extends React.Component{
   constructor(props) {
     super(props);
 
-    //Create event binding here
-    //this.onToggleView = this.tick.bind(this.onToggleView);
+    this.state = {
+      mode: this.props.mode
+    }
+
+    //Create event bindings here
+    this.onToggleView = this.onToggleView.bind(this);
   }
 
   onToggleView(event){
-    console.log(event);
-    this.props.mode = this.props.mode === THUMBNAIL_MODE? DETAIL_MODE : THUMBNAIL_MODE;
-    this.render();
+    var newMode = this.state.mode === THUMBNAIL_MODE? DETAIL_MODE : THUMBNAIL_MODE;
+    this.setState({mode: newMode});
   }
 
   getView() {
-    if(this.props.mode === THUMBNAIL_MODE) {
-      return <ClusterThumbView data={this.props.mode}></ClusterThumbView>
+    if(this.state.mode === THUMBNAIL_MODE) {
+      return <ClusterThumbView data={this.state.mode}></ClusterThumbView>
     } else {
-      return <h1>Hey Buddy</h1>
+      return <ClusterDetailView data={this.state.mode}></ClusterDetailView>
     }
   }
 
@@ -34,6 +37,7 @@ class ClusterToggleView extends React.Component{
     return (
       <div>
         <button onClick={this.onToggleView} >Toggle View</button>
+        <hr/>
         {this.getView()}
       </div>
             );
@@ -41,17 +45,7 @@ class ClusterToggleView extends React.Component{
 }
 
 ClusterToggleView.defaultProps = {
-    mode: DETAIL_MODE
+    mode: THUMBNAIL_MODE
   };
-
-
-
-
-//Events management
-
-//Display Data
-
-//Template?
-
 
 export default ClusterToggleView
