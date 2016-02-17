@@ -135,9 +135,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 47.0,
+		"height": 87.0,
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
 			[
 				"ins",
 				"Package Control: Install Package"
@@ -172,6 +180,7 @@
 	},
 	"file_history":
 	[
+		"/Users/juangarzon/Desktop/React/package.json",
 		"/Users/juangarzon/Desktop/GRT/samee-html5-assessment-editor/app/models/question.rb",
 		"/Users/juangarzon/Desktop/React/src/ClusterThumbView/index.js",
 		"/Users/juangarzon/Desktop/React/index.html",
@@ -469,7 +478,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -510,8 +519,8 @@
 						"selection":
 						[
 							[
-								538,
-								538
+								263,
+								263
 							]
 						],
 						"settings":
@@ -521,7 +530,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 76.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
