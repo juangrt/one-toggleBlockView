@@ -1,7 +1,7 @@
 {
   "name": "toggleBlockView",
   "version": "0.0.1",
-  "description": "Toggle Block Component",
+  "description": "Environment Toggle Block Component",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -30,8 +30,10 @@
     "webpack": "^1.12.11"
   },
   "dependencies": {
+    "css-loader": "^0.23.1",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
-    "react-pong": "^1.1.1"
+    "react-pong": "^1.1.1",
+    "style-loader": "^0.13.0"
   }
 }
