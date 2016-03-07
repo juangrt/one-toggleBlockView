@@ -1,11 +1,12 @@
 {
-  "name": "toggleBlockView",
-  "version": "0.0.1",
-  "description": "Environment Toggle Block Component",
-  "main": "index.js",
+  "name": "onesie-toggle-environment-block",
+  "version": "0.0.2",
+  "description": "React: Environment Toggle Block Component",
+  "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --devtool=source-map"
+    "test":       "echo \"Error: no test specified\" && exit 1",
+    "build":      "webpack --devtool=source-map",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
