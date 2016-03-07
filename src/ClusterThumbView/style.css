@@ -1,0 +1,39 @@
+.env-block-thumb {
+  width: 10em;
+  min-height: 10em;
+  float: left;
+  margin: .5em;
+}
+
+.env-block-thumb-left , .env-block-thumb-right{
+  width: 50%
+}
+
+.env-block-thumb-left {
+  float: left;
+  min-height: 5em;
+}
+.env-block-thumb-right {
+  float: right;
+}
+
+.env-block-thumb-footer {
+  clear: both;
+}
+
+h3.env-block-thumb-title {
+  color: #ff0000;
+  text-align: center;
+}
+
+.env-block-thumb-pending {
+  background-color: #ff0;
+}
+
+.env-block-thumb-success {
+  background-color: #0f0;
+}
+
+.env-block-thumb-failure {
+  background-color: #f00;
+}

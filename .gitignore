@@ -1,0 +1,6 @@
+/node_modules/
+react.sublime-workspace
+react.sublime-project
+/dist/
+/index.html
+/index.js
