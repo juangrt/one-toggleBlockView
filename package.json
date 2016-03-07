@@ -2,7 +2,7 @@
   "name": "onesie-toggle-environment-block",
   "version": "0.0.2",
   "description": "React: Environment Toggle Block Component",
-  "main": "webpack.config.js",
+  "main": "index.js",
   "scripts": {
     "test":       "echo \"Error: no test specified\" && exit 1",
     "build":      "webpack --devtool=source-map",
