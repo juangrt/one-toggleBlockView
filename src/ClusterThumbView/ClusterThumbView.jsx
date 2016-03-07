@@ -29,7 +29,7 @@ class ClusterThumbView extends React.Component{
   }
 
   copyAllClicked(event){
-    alert("Copy All clicked for: ");
+    console.log("Copy All clicked for: " + this.props.environment.name);
   }
   
   render() {
