@@ -49,4 +49,4 @@ ClusterToggleView.defaultProps = {
     mode: THUMBNAIL_MODE
   };
 
-export default ClusterToggleView
+export default ClusterToggleView;

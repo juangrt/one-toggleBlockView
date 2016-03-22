@@ -65,4 +65,4 @@ class ClusterThumbView extends React.Component{
 //ClusterThumbView.propTypes = { mode: React.PropTypes.string };
 
 
-export default ClusterThumbView
+export default ClusterThumbView;

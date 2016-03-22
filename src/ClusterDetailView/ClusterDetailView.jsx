@@ -17,4 +17,4 @@ class ClusterDetailView extends React.Component{
 }
 
 
-export default ClusterDetailView
+export default ClusterDetailView;
