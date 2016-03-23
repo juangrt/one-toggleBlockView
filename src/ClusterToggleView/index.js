@@ -1,2 +1,2 @@
-import ClusterToggleView from './ClusterToggleView.jsx';
-export default ClusterToggleView
+import ClusterToggleView from './ClusterToggleView';
+export default ClusterToggleView;

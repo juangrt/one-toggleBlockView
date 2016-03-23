@@ -1,3 +1,3 @@
 require("./style.css");
-import ClusterDetailView from './ClusterDetailView.jsx';
-export default ClusterDetailView
+import ClusterDetailView from './ClusterDetailView';
+export default ClusterDetailView;
