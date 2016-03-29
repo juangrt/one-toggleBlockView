@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import React from 'react';
 
 /*
@@ -23,9 +24,15 @@ class ClusterThumbView extends React.Component{
   constructor(props) {
     super(props);
 
+    var status = this.props.environment.status.toLowerCase();
+
+    var blockClassNames = classNames('env-block-thumb', 
+      "env-block-thumb-"+ status);
+
 
     //Create event binding here
     this.copyAllClicked = this.copyAllClicked.bind(this);
+    this.blockClassNames = blockClassNames;
   }
 
   copyAllClicked(event){
@@ -34,8 +41,8 @@ class ClusterThumbView extends React.Component{
   
   render() {
     return (
-      <div className="env-block-thumb , env-block-thumb-pending">
-        <h3 id="title" className="env-block-thumb-title">
+      <div className={this.blockClassNames}>
+        <h3 className="env-block-thumb-title">
           {this.props.environment.name}
         </h3>
         <div className="env-block-thumb-left">

@@ -31,7 +31,7 @@ class ClusterToggleView extends React.Component{
     if(this.state.mode === THUMBNAIL_MODE) {
       return <ClusterThumbView environment={this.props.environment}></ClusterThumbView>
     } else {
-      return <ClusterDetailView data={this.state.mode}></ClusterDetailView>
+      return <ClusterDetailView environment={this.props.environment}></ClusterDetailView>
     }
   }
 
