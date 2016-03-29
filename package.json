@@ -4,8 +4,8 @@
   "description": "React: Environment Toggle Block Component",
   "main": "index.js",
   "scripts": {
-    "test":       "echo \"Error: no test specified\" && exit 1",
-    "build":      "webpack --devtool=source-map",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --devtool=source-map",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -31,6 +31,7 @@
     "webpack": "^1.12.11"
   },
   "dependencies": {
+    "classnames": "^2.2.3",
     "css-loader": "^0.23.1",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
