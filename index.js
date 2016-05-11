@@ -1,2 +1,1 @@
-import ClusterToggleView from './src/';
-export default ClusterToggleView
+module.exports = require('./lib/');
