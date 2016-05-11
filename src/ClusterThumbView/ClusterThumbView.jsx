@@ -1,4 +1,4 @@
-import classNames from 'classnames'
+import classNames from 'classnames';
 import React from 'react';
 
 /*
@@ -28,7 +28,6 @@ class ClusterThumbView extends React.Component{
 
     var blockClassNames = classNames('env-block-thumb', 
       "env-block-thumb-"+ status);
-
 
     //Create event binding here
     this.copyAllClicked = this.copyAllClicked.bind(this);
