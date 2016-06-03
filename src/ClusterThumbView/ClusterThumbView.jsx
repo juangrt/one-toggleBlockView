@@ -30,6 +30,7 @@ class ClusterThumbView extends React.Component{
       "env-block-thumb-"+ status);
 
     //Create event binding here
+    this.status = status;
     this.copyAllClicked = this.copyAllClicked.bind(this);
     this.blockClassNames = blockClassNames;
   }
@@ -39,22 +40,68 @@ class ClusterThumbView extends React.Component{
   }
   
   render() {
+        const styles = {
+          thumb: {
+            width: "10em",
+            minHeight: "10em",
+            float: "left",
+            margin: ".5em",
+
+          } ,
+
+          thumbLeft: {
+            width: "50%"
+          } ,
+
+          thumbRight: {
+            width: "50%"
+          } ,
+
+          thumbLeft: {
+            float: "left",
+            minHeight: "5em"
+          } ,
+
+          thumbRight: {
+            float: "right"
+          } ,
+
+          thumbFooter: {
+            clear: "both"
+          } ,
+
+          title: {
+            color: "#000000" ,
+            textAlign: "center"
+          } ,
+
+          pending: {
+            backgroundColor: "#ff0"
+          } ,
+
+          success: {
+            backgroundColor: "#0f0"
+          } ,
+
+          failed: {
+            backgroundColor: "#f00"
+          }
+        };
+
     return (
-      <div className={this.blockClassNames}>
-        <h3 className="env-block-thumb-title">
+      <div style={Object.assign({}, styles.thumb , styles[this.status.toLowerCase()])}>
+        <h3 style={styles.title} >
           {this.props.environment.name}
         </h3>
-        <div className="env-block-thumb-left">
-
-        </div>
+        <div style={styles.thumbLeft } > </div>
         
-        <div className="env-block-thumb-right">
+        <div style={styles.thumbRight}>
           <div onClick={this.copyAllClicked}>
             Copy All
           </div>
         </div>
 
-        <div className="env-block-thumb-footer">
+        <div style={styles.thumbFooter}>
           <div style={{float:'left'}}>
             {this.props.environment.version}
           </div>
