@@ -16,8 +16,6 @@ class ClusterToggleView extends React.Component{
       mode: this.props.mode
     }
 
-    console.log(props);
-
     //Create event bindings here
     this.onToggleView = this.onToggleView.bind(this);
   }
