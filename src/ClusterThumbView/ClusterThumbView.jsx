@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react';
 
 /*
@@ -23,9 +24,15 @@ class ClusterThumbView extends React.Component{
   constructor(props) {
     super(props);
 
+    var status = this.props.environment.status.toLowerCase();
+
+    var blockClassNames = classNames('env-block-thumb', 
+      "env-block-thumb-"+ status);
 
     //Create event binding here
+    this.status = status;
     this.copyAllClicked = this.copyAllClicked.bind(this);
+    this.blockClassNames = blockClassNames;
   }
 
   copyAllClicked(event){
@@ -33,22 +40,68 @@ class ClusterThumbView extends React.Component{
   }
   
   render() {
+        const styles = {
+          thumb: {
+            width: "10em",
+            minHeight: "10em",
+            float: "left",
+            margin: ".5em",
+
+          } ,
+
+          thumbLeft: {
+            width: "50%"
+          } ,
+
+          thumbRight: {
+            width: "50%"
+          } ,
+
+          thumbLeft: {
+            float: "left",
+            minHeight: "5em"
+          } ,
+
+          thumbRight: {
+            float: "right"
+          } ,
+
+          thumbFooter: {
+            clear: "both"
+          } ,
+
+          title: {
+            color: "#000000" ,
+            textAlign: "center"
+          } ,
+
+          pending: {
+            backgroundColor: "#ff0"
+          } ,
+
+          success: {
+            backgroundColor: "#0f0"
+          } ,
+
+          failed: {
+            backgroundColor: "#f00"
+          }
+        };
+
     return (
-      <div className="env-block-thumb , env-block-thumb-pending">
-        <h3 id="title" className="env-block-thumb-title">
+      <div style={Object.assign({}, styles.thumb , styles[this.status.toLowerCase()])}>
+        <h3 style={styles.title} >
           {this.props.environment.name}
         </h3>
-        <div className="env-block-thumb-left">
-
-        </div>
+        <div style={styles.thumbLeft } > </div>
         
-        <div className="env-block-thumb-right">
+        <div style={styles.thumbRight}>
           <div onClick={this.copyAllClicked}>
             Copy All
           </div>
         </div>
 
-        <div className="env-block-thumb-footer">
+        <div style={styles.thumbFooter}>
           <div style={{float:'left'}}>
             {this.props.environment.version}
           </div>
@@ -65,4 +118,4 @@ class ClusterThumbView extends React.Component{
 //ClusterThumbView.propTypes = { mode: React.PropTypes.string };
 
 
-export default ClusterThumbView
+export default ClusterThumbView;

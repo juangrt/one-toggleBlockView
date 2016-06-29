@@ -1,2 +1,2 @@
 import ClusterToggleView from './ClusterToggleView';
-export default ClusterToggleView;
+export default ClusterToggleView
