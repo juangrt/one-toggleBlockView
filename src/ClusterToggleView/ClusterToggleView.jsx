@@ -16,8 +16,6 @@ class ClusterToggleView extends React.Component{
       mode: this.props.mode
     }
 
-    console.log(props);
-
     //Create event bindings here
     this.onToggleView = this.onToggleView.bind(this);
   }
@@ -28,16 +26,21 @@ class ClusterToggleView extends React.Component{
   }
 
   getView() {
-    if(this.state.mode === THUMBNAIL_MODE) {
-      return <ClusterThumbView environment={this.props.environment}></ClusterThumbView>
-    } else {
-      return <ClusterDetailView environment={this.props.environment}></ClusterDetailView>
-    }
+    return (
+        <div>
+          <ClusterThumbView environment={this.props.environment} onClick={this.onToggleView}></ClusterThumbView>
+          {(() => {
+            if(this.state.mode === DETAIL_MODE){
+              return <ClusterDetailView environment={this.props.environment} onClick={this.onToggleView}></ClusterDetailView>
+            }
+          })()}
+        </div>
+        );
   }
 
   render() {
     return (
-      <div onClick={this.onToggleView}>
+      <div>
         {this.getView()}
       </div>
             );

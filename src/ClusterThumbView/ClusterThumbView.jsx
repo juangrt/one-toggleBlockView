@@ -89,7 +89,7 @@ class ClusterThumbView extends React.Component{
         };
 
     return (
-      <div style={Object.assign({}, styles.thumb , styles[this.status.toLowerCase()])}>
+      <div style={Object.assign({}, styles.thumb , styles[this.status.toLowerCase()])} onClick={this.props.onClick}>
         <h3 style={styles.title} >
           {this.props.environment.name}
         </h3>
@@ -115,7 +115,7 @@ class ClusterThumbView extends React.Component{
 }
 
 
-//ClusterThumbView.propTypes = { mode: React.PropTypes.string };
+ClusterThumbView.propTypes = { onClick: React.PropTypes.func };
 
 
 export default ClusterThumbView;
