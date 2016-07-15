@@ -22,15 +22,32 @@ class ClusterDetailView extends React.Component{
 
     this.status = status;
     this.blockClassNames = blockClassNames;
+    this.onWindowClick = this.onWindowClick.bind(this);
+  }
+
+  onWindowClick(event) {
+    event.stopPropagation();
   }
 
   render() {
     const styles = {
+          detailContainer: {
+            position: "fixed",
+            width:     "100%",
+            height:     "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            top: "0",
+            left: "0",
+          },
+
           detail: {
-            width: "50em",
-            minHeight: "20em",
-            float: "left",
-            margin: ".5em",
+            zIndex: "100",
+            border: "solid 1px black",
+            position: "fixed",
+            left: "12.5%",
+            top: "5%",
+            height: "90%",
+            width: "75%"
           } ,
 
           detailLeft: {
@@ -73,17 +90,21 @@ class ClusterDetailView extends React.Component{
     }
 
     return (
-      <div style={Object.assign({}, styles.detail , styles[this.status]) }>
-        <h1 style={ styles.detailTitle }>
-          {this.props.environment.name}
-        </h1>
-        <div>
+      <div style={styles.detailContainer} onClick={this.props.onClick}>
+        <div style={Object.assign({}, styles.detail , styles[this.status]) } onClick={this.onWindowClick}>
+          <h1 style={ styles.detailTitle }>
+            {this.props.environment.name}
+          </h1>
+          <div>
 
+          </div>
         </div>
       </div>
             );
   }
 }
+
+ClusterDetailView.propTypes = { onClick: React.PropTypes.func };
 
 
 export default ClusterDetailView;
