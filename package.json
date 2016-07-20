@@ -1,7 +1,7 @@
 {
   "name": "onesie-toggle-environment-block",
-  "version": "1.0.3",
-  "description": "React: Environment Toggle Block Component",
+  "version": "1.0.4",
+  "description": "React Component that allows toggling between a thumbnail view and a detail view",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
