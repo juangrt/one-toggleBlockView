@@ -17,6 +17,33 @@ class ClusterToggleView extends React.Component{
 
     //Create event bindings here
     this.onToggleView = this.onToggleView.bind(this);
+    this.getThumbElement = this.getThumbElement.bind(this);
+    this.getDetailElement = this.getDetailElement.bind(this);
+
+    if(React.Children.count(this.props.children) > 2){
+      throw new Error("Too many Children Elements");
+    }
+  }
+
+
+  getThumbElement(){
+    if(this.props.thumbElement){
+      return this.props.thumbElement;
+    } else if(React.Children.count(this.props.children) === 2){
+      return this.props.children[0];
+    } else {
+      throw new Error("No Thumb Element to Render");
+    }
+  }
+
+  getDetailElement(){
+    if(this.props.detailElement){
+      return this.props.detailElement;
+    } else if (React.Children.count(this.props.children) === 2){
+      return this.props.children[1];
+    } else {
+      throw new Error("No Detail Element to Render");
+    }
   }
 
   onToggleView(event){
@@ -28,15 +55,15 @@ class ClusterToggleView extends React.Component{
     return (
         <div>
           <ClusterThumbView 
-            element={this.props.thumbElement}
+            element={this.getThumbElement()}
             style={this.props.thumbViewStyle}
-            onClick={this.onToggleView}></ClusterThumbView>
+            onClick={this.onToggleView}/>
           {(() => {
             if(this.state.mode === DETAIL_MODE){
               return <ClusterDetailView 
+                        element={this.getDetailElement()}
                         style={this.props.detailViewStyle}
-                        element={this.props.detailElement}
-                        onClick={this.onToggleView}></ClusterDetailView>
+                        onClick={this.onToggleView}/>
             }
           })()}
         </div>
@@ -54,8 +81,8 @@ class ClusterToggleView extends React.Component{
 
 ClusterToggleView.propTypes = { 
   mode: React.PropTypes.string,
-  thumbElement: React.PropTypes.element.isRequired,
-  detailElement: React.PropTypes.element.isRequired,
+  thumbElement: React.PropTypes.element,
+  detailElement: React.PropTypes.element,
   detailViewStyle: React.PropTypes.object,
   thumbViewStyle: React.PropTypes.object
 };
