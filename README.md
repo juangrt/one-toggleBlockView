@@ -23,8 +23,7 @@ TODO: Write history
 
 ## Credits
 
-**[Juan Carlos Garzon](https://github.com/juangrt)**
-Author
+**[Juan Carlos Garzon](https://github.com/juangrt)**Author
 
 **[Oakley Hall](https://github.com/ohall)**
 Project Lead, Code Review
