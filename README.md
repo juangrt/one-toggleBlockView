@@ -31,7 +31,7 @@ import ClusterToggleView from 'onesie-toggle-environment-block';
 </ClusterToggleView>
 ```
 
-### Passing Views a Prop
+### Passing Views as Props
 ```javascript
 var thumb = <div>Thumb View</div>;
 var expanded = <div>Detail View</div>;
