@@ -8,11 +8,9 @@ class ClusterThumbView extends React.Component{
 
   style(){
     var style = {
-      width: "10em",
+      minWidth: "10em",
       minHeight: "10em",
-      float: "left",
-      margin: ".5em",
-      backgroundColor: "#FFFFFF"
+      backgroundColor: "#FFFFFF",
     };
     return Object.assign({}, style , this.props.style);
   }
