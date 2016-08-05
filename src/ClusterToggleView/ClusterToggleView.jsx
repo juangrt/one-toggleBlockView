@@ -21,16 +21,15 @@ class ClusterToggleView extends React.Component{
     this.getDetailElement = this.getDetailElement.bind(this);
 
     if(React.Children.count(this.props.children) > 2){
-      throw new Error("Too many Children Elements");
+      throw new Error("Too many Child Elements");
     }
   }
-
 
   getThumbElement(){
     if(this.props.thumbElement){
       return this.props.thumbElement;
-    } else if(React.Children.count(this.props.children) === 2){
-      return this.props.children[0];
+    } else if(React.Children.count(this.props.children) >= 1){
+      return Array.isArray(this.props.children)? this.props.children[0] : this.props.children;
     } else {
       throw new Error("No Thumb Element to Render");
     }
@@ -51,10 +50,10 @@ class ClusterToggleView extends React.Component{
     this.setState({mode: newMode});
   }
 
-  getView() {
+  render() {
     return (
-        <div>
-          <ClusterThumbView 
+      <div className="toggleView" style={this.props.style}>
+        <ClusterThumbView 
             element={this.getThumbElement()}
             style={this.props.thumbViewStyle}
             onClick={this.onToggleView}/>
@@ -66,14 +65,6 @@ class ClusterToggleView extends React.Component{
                         onClick={this.onToggleView}/>
             }
           })()}
-        </div>
-        );
-  }
-
-  render() {
-    return (
-      <div>
-        {this.getView()}
       </div>
             );
   }
